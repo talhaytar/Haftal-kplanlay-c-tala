@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haftalık Planlayıcı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Haftalık Planlayıcı</h1>
+
+    <div class="settings">
+      <label>Başlangıç Saati:</label>
+      <input type="time" id="startTime" value="08:00">
+      <label>Bitiş Saati:</label>
+      <input type="time" id="endTime" value="23:00">
+      <button id="generate">Haftayı Oluştur</button>
+    </div>
+
+    <div id="weekContainer"></div>
+
+    <div class="buttons">
+      <button id="save">💾 Kaydet</button>
+      <button id="clear">🗑️ Haftayı Sıfırla</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

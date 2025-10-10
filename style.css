@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f3f6fc;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.settings {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.settings input, .settings button {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.settings button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.settings button:hover {
+  background: #0056b3;
+}
+
+#weekContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.day {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.day h2 {
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}
+
+.hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0;
+}
+
+.hour span {
+  width: 40px;
+  font-size: 13px;
+  color: #555;
+}
+
+.hour input {
+  flex: 1;
+  margin-left: 5px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+#save { background: #28a745; }
+#clear { background: #dc3545; }
+
+#save:hover { background: #1e7e34; }
+#clear:hover { background: #b52a36; }
